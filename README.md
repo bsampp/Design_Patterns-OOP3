@@ -1,1 +1,2 @@
-# Design_Patterns-OOP3
+# Design Patterns
+some design patterns studied
