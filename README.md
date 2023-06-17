@@ -1,2 +1,2 @@
 # Design Patterns
-Some design patterns studied
+Some design patterns studied in university
