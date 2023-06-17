@@ -1,2 +1,2 @@
-# Design Patterns
-Some design patterns studied in university
+# OOP
+Some object-oriented programming studies developed in TypeScript
