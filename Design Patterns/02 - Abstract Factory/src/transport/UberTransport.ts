@@ -3,6 +3,8 @@ import Car from "../vehicles/land/Car";
 import ILandVehicle from "../vehicles/land/interfaces/ILandVehicles";
 import ITransportFactory from "./interfaces/ITransportFactory";
 import Airplane from "../vehicles/aerial/Airplane";
+import LimeTransport from "./LimeTransport";
+import NineNineTransport from "./NineNineTransport";
 
 export default class UberTransport implements ITransportFactory{
     createTransportVehicle(): ILandVehicle {
@@ -10,6 +12,18 @@ export default class UberTransport implements ITransportFactory{
     }
     createTransportAircraft(): IAircraft {
         return new Airplane();
+    }
+
+    createUberTransport(): UberTransport {
+        return new UberTransport();
+    }
+    
+    createNineNineTransport(): NineNineTransport {
+        return new NineNineTransport();
+    }
+
+    createLimeTransport(): LimeTransport {
+        return new LimeTransport();
     }
 
 }

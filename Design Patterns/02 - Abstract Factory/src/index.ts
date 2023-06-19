@@ -4,11 +4,13 @@ import NineNineTransport from "./transport/NineNineTransport";
 import UberTransport from "./transport/UberTransport";
 import Company from "./transport/consts/Company";
 import ITransportFactory from "./transport/interfaces/ITransportFactory";
+import Vehicle from "./vehicles/consts/Vehicle";
 
 const currentCompany = Company.LIME;
 let factory! : ITransportFactory;
 
 switch (currentCompany) {
+
     case Company.UBER:
         factory = new UberTransport();
         break;
@@ -23,5 +25,5 @@ switch (currentCompany) {
         break;
 }
 
-const client = new Client(factory);
+const client = new Client(factory.createNineNineTransport(),Vehicle.AEREO);
 client.startRoute();
