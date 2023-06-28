@@ -16,10 +16,10 @@ function imprimir(sanduiche: Sanduiche){
     console.log("Tipo de pão: " + sanduiche.bread);
     console.log("Tipo de proteína: " + sanduiche.protein);
     console.log("Tipo de salada: " + sanduiche.salad);
+    console.log("Quantidade de molhos: " + sanduiche.sauces.length)
     console.log("Molhos: " );
     for (let sauce of sanduiche.sauces) {
         console.log("- " + sauce.name);
     }
-    
-
+    console.log("\n")
 }
