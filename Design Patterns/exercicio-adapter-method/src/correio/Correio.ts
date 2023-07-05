@@ -5,7 +5,7 @@ export default class Correio implements ICorreio{
         console.log("Enviando entrega via correio");
     }
     receiveCorreio(): void {
-        console.log("Recebendo entrega via correio");
+        console.log("Recebendo entrega via correio" + "\n");
     }
 
 }
