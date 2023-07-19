@@ -14,7 +14,7 @@ const database: DatabaseItem[] = [
   },
   {
     email: "email@gmail.com",
-    password: "123123",
+    password: "12312",
     permission: PermissionType.USER,
   },
 ];
